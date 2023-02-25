@@ -1,0 +1,11 @@
+Code review:
+1. Mendeklarasikan Website URL yang akan diuji yaitu https://www.saucedemo.com/
+
+2. Test LOGIN
+Scenario ini melakukan login dengan menggunakan credential yang benar, yaitu username "standard_user" dan password "secret_sauce". Kemudian dilakukan assertLogin() yang berisi element ('.title'), ('.peek') untuk memastikan bahwa login berhasil dilakukan.
+
+3. Test Sauce Demo Invalid Password
+Scenario ini melakukan login dengan menggunakan username yang benar yaitu "standard_user", namun menggunakan password yang salah. Kemudian dilakukan assertLoginFail() yang berisi element ('[data-test="error"]') untuk memastikan bahwa login gagal dilakukan.
+
+4. Test Sauce Demo Sauce labs product backpack
+Scenario ini melakukan login dengan menggunakan credential yang benar, yaitu username "standard_user" dan password "secret_sauce". Kemudian dilakukan assertLogin() untuk memastikan bahwa login berhasil dilakukan. Setelah itu, dilakukan aksi untuk membuka produk "Sauce labs backpack" pada dashboard.
